@@ -14,33 +14,35 @@
     <title>My weather application</title>
   </head>
   <body>
-    <div class="weather-app">
+    <div className="weather-app">
       <header>
         <form id="search-form">
           <input
             type="search"
             placeholder="Enter a city.."
             required
-            class="search-input"
+            className="search-input"
             id="search-input"
           />
-          <input type="submit" value="Search" class="search-button" />
+          <input type="submit" value="Search" className="search-button" />
         </form>
       </header>
       <main>
-        <div class="current-weather">
+        <div className="current-weather">
           <div>
-            <h1 class="current-city" id="current-city">Paris</h1>
-            <p class="current-details">
+            <h1 className="current-city" id="current-city">Paris</h1>
+            <p className="current-details">
               <span id="current-date"></span>, moderate rain <br />
               Humidity: <strong>87%</strong>, Wind: <strong>7.2km/h</strong>
             </p>
           </div>
-          <div class="current-temperature">
-            <span class="current-temperature-icon">☀️</span
-            ><span class="current-temperature-value" id="current-temperature"
+          <div className="current-temperature">
+            <span className="current-temperature-icon">☀️</span
+            ><span
+              className="current-temperature-value"
+              id="current-temperature"
               >24</span
-            ><span class="current-temperature-unit">°C</span>
+            ><span className="current-temperature-unit">°C</span>
           </div>
         </div>
       </main>
